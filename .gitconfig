@@ -1,0 +1,25 @@
+[alias]
+    a = add
+    c = commit
+    s = status
+    lg = log --oneline --all --graph
+    d = diff
+    b = branch
+    sw = switch
+    st = stash
+    r = reset
+    lg2 = "log --graph --all --format=format:\"%C(yellow)%h %C(reset) %C(cyan bold)%ah %C(reset) %C(cyan )(%ar)%C(reset)%C(blue)%d%n        %s%C(reset)%C(dim white) - %an <%ae>\""
+    lg1 = "log --graph --all --format=format:\"%C(yellow)%h %C(reset)%s%C(yellow)%d %C(cyan )(%ar) %C(reset)%C(dim white)- %an\""
+    co = checkout
+	sm = submodule
+	smf = submodule foreach
+[core]
+    editor = vim
+[filter "lfs"]
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+[user]
+    name = jimmyhealer
+    email = yahing6066@gmail.com
